@@ -1,0 +1,349 @@
+/* 폰트적용 */
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html > body {
+    font-family: "GmarketSansMedium";
+  }
+  
+  body,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .top-bar {
+    top: -100px;
+  }
+  
+  .top-bar.active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    transition: top 1s;
+  }
+  
+  .con {
+    width: 1480px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .top-bar > .con > .logo-box > .logo {
+    display: block;
+    width: 210px;
+    height: 30px;
+  }
+  
+  .logo-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-box-1 > .menu-1 > li {
+    position: relative;
+  }
+  
+  .menu-box-1 > .menu-1 > li > ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .menu-box-1 > .menu-1 > li > ul > li {
+    display: inline-block;
+  }
+  
+  .menu-box-1 > .menu-1 > li > ul > li > a {
+    display: block;
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-box-1 > .menu-1 > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu-box-1 > .menu-1 > li > ul > li:hover > a {
+    color: white;
+  }
+  
+  .section-1 {
+    margin-top: 100px;
+  }
+  
+  .section-1 > .con > h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-top: 120px;
+  }
+  
+  .section-1 > .con > .link-btn {
+    margin-top: 30px;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 100px;
+  }
+  
+  .section-1 > .con > .link-btn > div > h3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 45px;
+  }
+  
+  .section-1 > .con > .link-btn > div > h3::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+  }
+  
+  .section-1 > .con > .link-btn > div > p {
+    margin-left: 160px;
+    font-size: 1.25rem;
+  }
+  
+  .section-1 > .con > .link-btn > div > a {
+    position: relative;
+    margin-left: 650px;
+  }
+  
+  .section-1 > .con > .link-btn > div > a:before {
+    position: absolute;
+    content: "→";
+    font-size: 3rem;
+    font-weight: bold;
+    top: -13px;
+  }
+  
+  .section-2 {
+    margin-top: 120px;
+    background-color: #f9f9f9;
+  }
+  
+  .section-2 > .con > div > h1 {
+    margin-top: 120px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .section-2 > .con > div > h1.btn-trade.active {
+    color: #d60000;
+  }
+  
+  .section-2 > .con > div > h1.btn-pharmaceutical.active {
+    color: blue;
+  }
+  
+  .section-2 > .con > .trade-con {
+    display: none;
+  }
+  
+  .section-2 > .con > .trade-con.active {
+    display: block;
+  }
+  
+  .section-2 > .con > .trade-con > p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .section-2 > .con > .trade-con > .btn-view-more {
+    margin: 40px 0;
+    border: 3px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 0;
+    transition: border-radius 0.3s, border-color 0.3s;
+  }
+  
+  .section-2 > .con > .trade-con > .btn-view-more:hover {
+    border-radius: 50px;
+    border-color: #d60000;
+  }
+  
+  .section-2 > .con > div {
+    margin-top: 30px;
+  }
+  
+  .section-2 > .con > .trade-con > div > a > div {
+    width: 361px;
+    height: 361px;
+  }
+  
+  .section-2 > .con > .trade-con > div > a {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .section-2 > .con > .trade-con > div > a:first-child {
+    margin-left: 0;
+  }
+  
+  .section-2 > .con > .trade-con > div > a:last-child {
+    margin-right: 0;
+  }
+  
+  .section-2 > .con > .trade-con > div > a > div {
+    position: relative;
+  }
+  
+  .section-2 > .con > .trade-con > div > a > div > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d60000;
+  }
+  
+  .section-2 > .con > .trade-con div > a > div > p {
+    position: absolute;
+    left: 35%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .section-2 > .con > .trade-con > div > a > h3 {
+    padding: 30px 0;
+    font-size: 1.2rem;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con {
+    display: none;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con.active {
+    display: block;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > .btn-view-more {
+    margin: 40px 0;
+    border: 3px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 0;
+    transition: border-radius 0.3s, border-color 0.3s;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > .btn-view-more:hover {
+    border-radius: 50px;
+    border-color: #0000d6;
+  }
+  
+  .section-2 > .con > div {
+    margin-top: 30px;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > div > a > div {
+    width: 361px;
+    height: 361px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .section-2 > .con >  .pharmaceutical-con > div > a {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > div > a:first-child {
+    margin-left: 0;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > div > a:last-child {
+    margin-right: 0;
+  }
+  
+  
+  .section-2 > .con > .pharmaceutical-con > div > a > div {
+    position: relative;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > div > a > div > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con div > a > div > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .section-2 > .con > .pharmaceutical-con > div > a > h3 {
+    padding: 30px 0;
+    font-size: 1.2rem;
+  }
+  
+  
+  .section-3 {
+    margin-top: 120px;
+  }
+  
+  .section-3 > .con > h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+  
+  .section-3 > .con > div > .search-menu-box {
+    padding: 30px 93px 30px 93px;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+  }
+  
+  .section-3 > .con > div > .search-menu-box > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .section-3 > .con > div > .search-menu-box > .search-menu {
+    display: none;
+  }
+  
